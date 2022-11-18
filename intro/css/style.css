@@ -1,0 +1,10 @@
+/* Le regole del css hanno sempre:
+SELETTORE (indica su quali elementi applicare le regole)
+REGOLE dentro le graffe con coppie di proprietà:valore.
+
+Ogni regola deve terminare con  ; */
+
+body {
+    background-color: #a0e0fc;
+    color:rgb(3, 75, 116);
+}
