@@ -43,6 +43,7 @@
 .container3 {
     display: flex;
     justify-content: space-between;
+    
 
     
     /*per allineare sul cross axis (qui verticale)*/
@@ -60,3 +61,34 @@ background:#ffcc00;
 
 }
 
+/* -------------------------------------------------------------------------- */
+/*                          ESEMPIO 4: assi invertiti                         */
+/* -------------------------------------------------------------------------- */
+
+.container4 {
+
+    height:1000px;
+    background:#fbffad;
+    display: flex;
+    /*flex-direction: row; */ /*default*/
+    /*     INVERTI MAIN AXIS E CROSS-AXIS: l'asse principale è ora l'asse VERTICAL
+     */  
+
+    flex-direction: column;
+    
+    /*SOLO con gli assi invertiti (flex-direction: column) 
+    JUSTIFY: lavora in verticale
+    ALIGN: lavora in orizzontale*/
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.box4 {
+    width:100px;
+    height:100px;
+    background: #1b86bb;
+
+    border:1px solid black;
+}
