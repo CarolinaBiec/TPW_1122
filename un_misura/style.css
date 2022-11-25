@@ -1,8 +1,7 @@
 .box1 {
     background:#ff00cc;
 
-    /*solo per farlo apparire sulla pagina*/
-    height:500px;
+   height:100vh; /*altezza 100% del VIEWPORT */
 
     width:80%;
   
@@ -10,7 +9,7 @@
 
 .box2 {
     background-color: rgb(74, 255, 46);
-    height:500px; /* 🤔 */
+    height:500px; 
 
     width:50%;
 }
@@ -27,6 +26,7 @@
 /* -------------------------------------------------------------------------- */
 
 /*la dimensione di default del testo è normalmente 1rem*/
+/* 1rem di default corrisponde a 16px */
 
 h1 {
     font-size: 4rem; /*3x la dimensione base del carattere */
@@ -37,3 +37,17 @@ h2 {
     /*posso usare dimensioni decimali, ad esempio 1.75rem */
 }
 
+.smaller   {
+    font-size: 0.75rem; /*font più piccolo*/
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+.titoletto {
+    font-size: 0.25em; /*unità di misura relativa alla dimensione del testo del genitore */
+
+    /*0.25em = 25% della dimensione del testo del genitore*/
+
+}
