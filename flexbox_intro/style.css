@@ -1,0 +1,62 @@
+/* -------------------------------------------------------------------------- */
+/*                                ESEMPIO BASE                                */
+/* -------------------------------------------------------------------------- */
+
+.container {
+    display: flex; /*applico FLEXBOX al genitore */
+}
+
+.box {
+    border:1px solid #ffcc00;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          ESEMPIO CON ALLINEAMENTO                          */
+/* -------------------------------------------------------------------------- */
+
+.container2 {
+    display: flex;
+    /* justify-content: flex-start; valore di default */
+
+   /*  flex-end: allinea alla fine dell'asse
+    center: allinea al centro
+    space-evenly: spaziatura uguale tra gli elementi
+ */
+ justify-content: space-between; /*allinea agli estremi */
+
+/*  NOTA: justify-content lavora sul MAIN AXIS */
+
+
+    
+}
+
+.box2 {
+    width:10rem;
+    border:1px solid #999;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  ESEMPIO 3                                 */
+/* -------------------------------------------------------------------------- */
+
+.container3 {
+    display: flex;
+    justify-content: space-between;
+
+    
+    /*per allineare sul cross axis (qui verticale)*/
+    /*di default, flexbox rende le colonne alte uguali */
+    /*align-items: stretch; VALORE DI DEFAULT */
+
+    align-items: center; /*centro verticale*/
+    /*oppure END (in fondo-sotto) o START (all'inizio-sopra) */
+ 
+}
+.box3 {
+
+border:1px solid #222;
+background:#ffcc00;
+
+}
+
