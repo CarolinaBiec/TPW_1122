@@ -1,0 +1,39 @@
+.box1 {
+    background:#ff00cc;
+
+    /*solo per farlo apparire sulla pagina*/
+    height:500px;
+
+    width:80%;
+  
+}
+
+.box2 {
+    background-color: rgb(74, 255, 46);
+    height:500px; /* 🤔 */
+
+    width:50%;
+}
+
+.box3 {
+    background: #0051ff;
+    height:500px;
+
+    width:50%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     REM                                    */
+/* -------------------------------------------------------------------------- */
+
+/*la dimensione di default del testo è normalmente 1rem*/
+
+h1 {
+    font-size: 4rem; /*3x la dimensione base del carattere */
+}
+
+h2 {
+    font-size: 2rem; /*1.5 la dimensione base del carattere */
+    /*posso usare dimensioni decimali, ad esempio 1.75rem */
+}
+
