@@ -1,0 +1,22 @@
+body {
+    /*famiglia di Google Fonts*/
+ font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width:70%;
+    margin:auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+#mainHeader {
+    display: flex;
+    justify-content: space-between;
+    /*allineo sul MAIN AXIS (orizzontale) e dispongo ai lati estremi*/
+
+    align-items: center;
+    /*centro sul CROSS AXIS (verticale).*/
+}
