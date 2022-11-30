@@ -13,10 +13,90 @@ body {
 /* -------------------------------------------------------------------------- */
 
 #mainHeader {
+
     display: flex;
     justify-content: space-between;
     /*allineo sul MAIN AXIS (orizzontale) e dispongo ai lati estremi*/
 
     align-items: center;
     /*centro sul CROSS AXIS (verticale).*/
+
+}
+
+#mainNav ul {
+    /*l'elemento UL dentro mainNav */
+    list-style-type: none;
+    padding: 0;
+
+    /*faccio affiancare gli <li> figli */
+    display: flex;
+
+    /*spaziatura tra gli elementi flexbox*/
+    /*NOTA: diverso da padding perché agisce solo sugli spazi
+    tra gli elementi*/
+    column-gap: 1.5rem;
+}
+
+.logo img {
+    /*immagine dentro il DIV.logo*/
+    width: 6rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    HERO                                    */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+    height:100vh; /*100% altezza del viewport! */
+    /*vh = viewport height, misura relativa all'altezza viewport*/
+    /* ../ sale di un livello nella struttura della cartella*/
+    background-image: url('../images/hero_white.jpg');
+
+    /*evito che il background venga ripetuto se più piccolo del 
+    contenitore*/
+    background-repeat: no-repeat;
+
+    /*adatto la dimensione del background al contenitore */
+    background-size: cover;
+
+    /*disponi l'immagine di background al centro orizz.+vert.*/
+    background-position: center center;
+
+
+    display: flex; /*per disporre la .cta all'interno*/
+
+    align-items: center; /*allineo .cta in verticale*/
+ 
+
+}
+
+.cta h1 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+
+.cta h1 span {
+    /*elemento span dentro h1 dentro .cta */
+    font-weight: 300;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   SERVIZI                                  */
+/* -------------------------------------------------------------------------- */
+
+section#servizi {
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}
+
+.servizio {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+
+    margin-bottom: 2rem;
 }
