@@ -8,6 +8,11 @@ body {
     margin:auto;
 }
 
+img {
+    max-width: 100%; /*rendo fluide TUTTE le immagini */
+    /*anche se l'immagine è più grande del contenitore, si adatterà alla sua dimensione*/
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   HEADER                                   */
 /* -------------------------------------------------------------------------- */
@@ -104,11 +109,25 @@ section#servizi {
     width:33.333%;
 }
 
-.sImage img {
-    max-width: 100%;
-    /*crea immagini fluide che non escono mai dal loro contenitore*/
-}
+
 
 .sText {
     width: 66.666%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 LISTA DRINK                                */
+/* -------------------------------------------------------------------------- */
+
+.drinkList {
+    display: flex;
+    flex-wrap: wrap; /*quando lo spazio finisce, manda a capo i figli*/
+}
+
+.drink { 
+    width: 33.33%;
+}
+
+.drink img {
+    width: 100%;
 }
