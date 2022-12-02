@@ -172,6 +172,8 @@
                     NOME | COGNOME | EMAIL | TELEFONO
                     GENERE | DATA DI NASCITA
 
+                    ----------------------------------
+
                     (select) IL  DRINK PREFERITO
 
                     COME RAGGIUNGI IL NOSTRO LOCALE 
@@ -189,22 +191,101 @@
                 
                 -->
 
-                <form action="" method="POST">
+                <form >
                     <!-- NOTA: la LABEL è riferita all'ID dell'input -->
 
-                    <div class="inputWrapper">
+                    <fieldset>
+                        <legend>Dati anagrafici</legend>
 
-                        <label for="nome">Nome</label><br>
-                        <input type="text" id="nome" name="nome">  
+                        <div class="inputWrapper">
+                            <label for="nome">Nome</label><br>
+                            <input type="text" id="nome" name="nome">
+                        </div>
+                        <div class="inputWrapper">
+                            <label for="cognome">Cognome</label><br>
+                            <input type="text" id="cognome" name="cognome">
+                        </div>
+                        <div class="inputWrapper">
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="inputWrapper">
+                            <label for="telefono">Telefono</label><br>
+                            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{7}" placeholder="000-1234567">
+                        </div>
+                        <div class="inputWrapper">
+                        
+                            <div>Genere</div>
+                        
+                            <label for="m">M</label>
+                            <input type="radio" id="m" name="genere" value="m">
+                            <label for="f">F</label>
+                            <input type="radio" id="f" name="genere" value="f">
+                            <label for="altro">Altro</label>
+                            <input type="radio" id="altro" name="genere" value="altro">
+                        </div>
+                        <div class="inputWrapper">
+                            <label for="dataNascita">Data di nascita</label><br>
+                            <input type="date" id="dataNascita" name="dataNascita">
+                        </div>
+                    </fieldset>
 
-                    </div>
 
-                    <div class="inputWrapper">
+                    <fieldset>
 
-                        <label for="cognome">Cognome</label><br>
-                        <input type="text" id="cognome" name="cognome">  
+                        <legend>Parlaci di te</legend>
+    
+                        <div class="inputWrapper">
 
-                    </div>
+
+                            <label for="drink">Scegli il tuo drink preferito</label><br>
+                            <select name="drink" id="drink">
+                                <option value="">-</option>
+                                <option value="martini">Martini</option>
+                                <option value="negroni">Negroni</option>
+                                <option value="spritz">Spritz</option>
+                                <option value="gintonic">Gin Tonic</option>
+                                <option value="pinacolada">Pinacolada</option>
+                                <option value="oldfashioned">Old Fashioned</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="inputWrapper">
+                            <div>Come raggiungi solitamente il locale?</div>
+                            <input type="checkbox" name="mezzo" id="bici" value="bici">
+                            <label for="bici">Bici</label>
+                            <input type="checkbox" name="mezzo" id="bus" value="bus">
+                            <label for="bus">Bus</label>
+                            <input type="checkbox" name="mezzo" id="metro" value="metro">
+                            <label for="metro">Metro</label>
+                            <label for="piedi">A piedi</label>
+                            <input type="checkbox" name="mezzo" id="piedi" value="piedi">
+
+                        </div>
+
+
+                        <div class="inputWrapper">
+
+                            <label for="note">Scrivi un messaggio - massimo 120 caratteri</label><br>
+
+                            <textarea name="note" id="note" maxlength="120">
+                        
+                            </textarea>
+
+                        </div>
+
+
+
+                    </fieldset>
+
+
+
+                   
+
+
+                   <button type="submit" id="submitButton">Invia</button>
 
                                         
                 </form>
