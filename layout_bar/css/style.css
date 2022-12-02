@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     /*famiglia di Google Fonts*/
  font-family: 'Poppins', sans-serif;
@@ -95,6 +99,8 @@ section#servizi {
     padding-top: 4rem;
     padding-bottom: 4rem;
 
+    
+
 }
 
 .servizio {
@@ -103,6 +109,7 @@ section#servizi {
     column-gap: 2rem;
 
     margin-bottom: 2rem;
+
 }
 
 .sImage {
@@ -122,12 +129,34 @@ section#servizi {
 .drinkList {
     display: flex;
     flex-wrap: wrap; /*quando lo spazio finisce, manda a capo i figli*/
+    
+  
+    margin-left:-1rem; /*il margine negativo SPOSTA a SINISTRA l'elemento */
+    margin-right: -1rem; /* il margine negativo SPOSTA a DESTRA l'elemento */
+
 }
 
 .drink { 
     width: 33.33%;
+    padding:1rem;
+
 }
 
 .drink img {
     width: 100%;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+#mainFooter {
+    background:#222;
+    color:#cdcdcd;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+
+    text-align: center;
 }
