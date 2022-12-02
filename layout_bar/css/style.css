@@ -65,7 +65,6 @@ body {
 
 
     display: flex; /*per disporre la .cta all'interno*/
-
     align-items: center; /*allineo .cta in verticale*/
  
 
@@ -99,4 +98,17 @@ section#servizi {
     column-gap: 2rem;
 
     margin-bottom: 2rem;
+}
+
+.sImage {
+    width:33.333%;
+}
+
+.sImage img {
+    max-width: 100%;
+    /*crea immagini fluide che non escono mai dal loro contenitore*/
+}
+
+.sText {
+    width: 66.666%;
 }
