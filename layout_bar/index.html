@@ -23,42 +23,39 @@
 </head>
 <body>
     
-    <header id="mainHeader" class="container">
-        <div class="logo">
-            <img src="./images/logo_cocktail.png" alt="Cocktail Bar">
-        </div>
-
-        <nav id="mainNav">
-
-             <!--        
-            SHORTCUT EMMET PER FARE IL MENU
-            DALLE SINGOLE RIGHE:
-
-            1. seleziona le RIGHE
-            2. alt+shift+w (wrap with abbreviation)
-            3. ul>li*a
-            -->
-
-            <ul>
-                <li>
-                    <a href="home.html">HOME</a>
-                </li>
-                <li>
-                    <a href="storia.html">LA NOSTRA STORIA</a>
-                </li>
-                <li>
-                    <a href="locale.html">IL LOCALE</a>
-                </li>
-                <li>
-                    <a href="drink.html">DRINK LIST</a>
-                </li>
-                <li>
-                    <a href="contatti.html">CONTATTI</a>
-                </li>
-            </ul>
-
-        </nav>
-    </header>
+    <div class="headerWrapper">
+        <header id="mainHeader" class="container">
+            <div class="logo">
+                <img src="./images/logo_cocktail.png" alt="Cocktail Bar">
+            </div>
+            <nav id="mainNav">
+                 <!--
+                SHORTCUT EMMET PER FARE IL MENU
+                DALLE SINGOLE RIGHE:
+                1. seleziona le RIGHE
+                2. alt+shift+w (wrap with abbreviation)
+                3. ul>li*a
+                -->
+                <ul>
+                    <li>
+                        <a href="home.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="storia.html">LA NOSTRA STORIA</a>
+                    </li>
+                    <li>
+                        <a href="locale.html">IL LOCALE</a>
+                    </li>
+                    <li>
+                        <a href="drink.html">DRINK LIST</a>
+                    </li>
+                    <li>
+                        <a href="contatti.html">CONTATTI</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
      <!-- FINE HEADER SITO -->
 
     <main>
@@ -284,7 +281,7 @@
 
                    
 
-                   <button type="submit" id="submitButton">Invia</button>
+                   <button type="submit" id="submitButton" class="button">Invia</button>
 
                                         
                 </form>
@@ -301,7 +298,27 @@
     </footer>
 
 
+    <script>
 
+        const nav = document.querySelector('.headerWrapper');
+        //definisco l'elemento da modificare (contenitore navbar)
+        
+        function fixedNav() {
+
+        if (window.scrollY) {       //se sta scrollando
+           nav.classList.add('scrolled');  //allora aggiungi una classe alla navbar
+        } else {
+           nav.classList.remove('scrolled');    //altrimenti togli la classe  
+        }
+        
+        }
+        
+         //sull'evento scroll fai partire la funzione sopra.
+        window.addEventListener('scroll', fixedNav); 
+
+        
+        </script>
+           
 
 </body>
 </html>

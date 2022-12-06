@@ -20,14 +20,46 @@ img {
 .button {
     background: #94303D;
     padding:0.5rem 1.5rem; /*primo valore: sopra + sotto | secondo valore: sx+dx*/
+    
+    border:0;
+    
     color:white;
     text-decoration: none; /*elimina il sottolineato */
     border-radius:6px;
 }
 
+.button:hover {
+    /*PSEUDOCLASSE: si riferisce a uno stato dell'elemento */
+    background:#47151c;
+    transition:all 0.5s;
+}
+
+a {
+    color:#94303D;
+}
+
+
+
 /* -------------------------------------------------------------------------- */
 /*                                   HEADER                                   */
 /* -------------------------------------------------------------------------- */
+
+.headerWrapper {
+    position: fixed; /*sovrappongo l'elemento */
+    width: 100%; /* position:fixed stringe tutto, quindi devo ridargli la dimensione */
+    /*gli assegno 100% perché deve essere a tutta larghezza */
+    /*background:rgba(255,255,255,0.5);*/
+
+    /*PER LA TRASPARENZA:*/
+    /* Metodo 1: rgba(r,g,b,alpha), es: rgba(255,255,255,0.5) */
+    /* Metodo 2: esadecimale, #colore + trasparenza, es. #ffffff88 */
+    transition:all 1s; /*con TRANSITION passo da uno stato all'altro in modo fluido*/
+}
+
+.headerWrapper.scrolled { /*l'elemento con ENTRAMBE le classi attive*/
+    background:#ffffff22;
+    backdrop-filter: blur(8px);
+}
 
 #mainHeader {
 
@@ -37,6 +69,7 @@ img {
 
     align-items: center;
     /*centro sul CROSS AXIS (verticale).*/
+
 
 }
 
@@ -52,6 +85,11 @@ img {
     /*NOTA: diverso da padding perché agisce solo sugli spazi
     tra gli elementi*/
     column-gap: 1.5rem;
+}
+
+#mainNav a {
+    text-decoration: none; /*elimino sottolineato*/
+
 }
 
 .logo img {
@@ -159,6 +197,12 @@ section#servizi {
 /*                                 STILI FORM                                 */
 /* -------------------------------------------------------------------------- */
 
+section#contatti {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: #efefef;
+}
+
 textarea#note {
 
     width:100%;
@@ -167,10 +211,17 @@ textarea#note {
     resize:none; /*tolgo la possibilità di ridimensionare il textarea */
 }
 
+fieldset {
+    border:1px solid #94303D;
+    border-radius:6px;
+}
+
 fieldset#anagrafici {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+   
+
 }
 
 #anagrafici .inputWrapper {
@@ -181,6 +232,7 @@ fieldset#anagrafici {
 fieldset#preferenze {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .scegliDrink, .comeArrivi {
@@ -193,6 +245,11 @@ fieldset#preferenze {
 
 .messaggio {
     width: 100%;
+}
+
+/*posso usare gli attributi anche nei selettori CSS */
+button[type='submit'] { /*seleziona solo i bottoni tipo SUBMIT */
+margin-top: 2rem;
 }
 
 
