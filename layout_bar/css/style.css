@@ -152,11 +152,31 @@ section#servizi {
 /* -------------------------------------------------------------------------- */
 
 textarea#note {
+
     width:100%;
     height:10rem;
 
     resize:none; /*tolgo la possibilità di ridimensionare il textarea */
 }
+
+fieldset#anagrafici {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#anagrafici .inputWrapper {
+    width: 33%;
+    margin-bottom: 1.5rem;
+}
+
+fieldset#preferenze {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
 
 /* -------------------------------------------------------------------------- */
 /*                                   FOOTER                                   */
