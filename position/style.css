@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+.genitore {
+    width: 600px;
+    height:600px;
+    background:#1394d0;
+
+    position: relative;
+
+
+}
+
+.figlio-a {
+    width:200px;
+    height:200px;
+    background: #e0e011;
+
+    position:absolute; /*posiziona rispetto al genitore.
+    Il genitore deve avere una position:relative;*/
+    top:0;
+    right:0;
+}
+
+.figlio-b {
+    background:#35ec19;
+    position: fixed;
+    /*FISSO rispetto all'intera pagina */
+    top:0; /*posiziona in alto*/
+    left:0; /*posiziona a sinistra */
+
+    width:100%;
+}
+
+.figlio-c {
+    width: 100px;
+    height:100px;
+    background:purple;
+    position: absolute;
+    /*posiziona rispetto al genitore.
+    Il genitore deve avere una position:relative;*/
+    top:0;
+    right:150px;
+
+    /*Z-INDEX: serve per definire l'ordine nelle sovrapposizioni. 
+
+    -1: sotto il livello di default
+    0: default
+    1: sopra 
+    2: ancora sopra
+    3... 
+
+    /*OCCCHIO! 🤓 */
+    
+    /* Quando usiamo position:absolute facciamo sempre caso a z-index perché 
+    si potrebbero sovrapporre elementi in modo scorretto */
+
+   
+
+}
