@@ -17,6 +17,14 @@ img {
     /*anche se l'immagine è più grande del contenitore, si adatterà alla sua dimensione*/
 }
 
+.button {
+    background: #94303D;
+    padding:0.5rem 1.5rem; /*primo valore: sopra + sotto | secondo valore: sx+dx*/
+    color:white;
+    text-decoration: none; /*elimina il sottolineato */
+    border-radius:6px;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   HEADER                                   */
 /* -------------------------------------------------------------------------- */
@@ -162,6 +170,7 @@ textarea#note {
 fieldset#anagrafici {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 #anagrafici .inputWrapper {
@@ -174,7 +183,17 @@ fieldset#preferenze {
     flex-wrap: wrap;
 }
 
+.scegliDrink, .comeArrivi {
+    /*seleziona entrambe le classi */
 
+    width: 50%;
+    margin-bottom: 3rem;
+
+}
+
+.messaggio {
+    width: 100%;
+}
 
 
 
