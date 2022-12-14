@@ -1,0 +1,50 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background:black;
+    color:white;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-style: italic;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+
+/*regole da 768px in su */
+@media screen and (min-width:768px) {
+
+    /*inserisco i selettori per questa media query nelle graffe */
+
+    body {
+        background: #6019a3;
+    }
+
+
+
+}
+
+/*regole da 1024px in su */
+@media screen and (min-width:1024px) {
+
+    body {
+        background: #0263b2;
+    }
+
+}
+
+/*ESEMPIO MEDIA QUERY PER ORIENTAMENTO DEVICE */
+@media screen and (orientation:portrait) {
+  h1 {
+    font-family: 'Times New Roman', serif;
+    color:#ffcc00;
+  }
+}
