@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    /*rendo fluide TUTTE le immagini */
+    max-width: 100%;
+    height:auto
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+#mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainMenu ul {
+
+    list-style-type: none;
+    display: flex;
+    column-gap:1rem;
+
+}
+
+.logo img{
+    width:6rem;
+}
+
