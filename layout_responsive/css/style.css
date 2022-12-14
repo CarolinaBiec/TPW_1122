@@ -1,0 +1,53 @@
+/* -------------------------------------------------------------------------- */
+/*                           STILI GENERALI E MOBILE                          */
+/* -------------------------------------------------------------------------- */
+* {box-sizing: border-box;}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #efefef;
+    color:#333;
+}
+
+img { /*rendo fluide le immagini */
+    max-width:100%;
+    height:auto
+}
+
+.logo img {
+    width: 3rem;
+}
+
+.container {
+    width: 96%;
+    margin:0 auto;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                           REGOLE PER SCHERMI MEDI                          */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width:768px) {
+
+    .logo img {
+        width: 6rem;
+    }
+
+    .container {
+        width: 92%;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                          REGOLE PER SCHERMI GRANDI                         */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width:1024px) {
+
+    .container {
+        width: 70%;
+    }
+
+}
