@@ -89,6 +89,39 @@ img {
 }
 
 /* -------------------------------------------------------------------------- */
+/*                           STILI MENU MOBILE OPEN                           */
+/* -------------------------------------------------------------------------- */
+
+.is-mobile-open .mainMenu ul {
+    /*faccio riapparire il menu!*/
+    display: block;
+}
+
+.is-mobile-open nav.mainMenu {
+    /*posiziono il menu mobile SOPRA tutta la pagina */
+    background:#efefef;
+
+    position: fixed; /*sovrappone l'elemento e lo fissa secondo le coordinate che imposto */
+    left:0; /*posiziona all'inizio della pagina, a sinistra */
+    top:52px; /*posiziona 52px dal limite superiore - l'altezza esatta della barra menu da mobile!*/
+    height:100vh;
+    width:100%;
+}
+
+.is-mobile-open a {
+    display: block; /* Il link diventa elemento blocco e occupa tutto lo schermo */
+    padding:1rem;
+    text-align: center;
+    border-bottom:1px solid #888;
+}
+
+.is-mobile-open a:hover {
+    background: #222;
+    color:#efefef;
+}
+
+
+/* -------------------------------------------------------------------------- */
 /*                           REGOLE PER SCHERMI MEDI                          */
 /* -------------------------------------------------------------------------- */
 
@@ -100,7 +133,7 @@ img {
 
     /*STILI MENU SCHERMI MEDI */
 
-    .menuIcon {
+    #menuIcon {
         display: none;
     }
 
