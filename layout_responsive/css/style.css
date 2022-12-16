@@ -24,6 +24,23 @@ img { /*rendo fluide le immagini */
 }
 
 
+.servImage img {
+    /*per allargare le immagini da mobile in modo da occupare tutto il viewport*/
+    width: 100%;
+}
+
+/* GALLERY */
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleryImage {
+    width: 50%;
+    padding:0.5rem;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                           REGOLE PER SCHERMI MEDI                          */
 /* -------------------------------------------------------------------------- */
@@ -36,9 +53,40 @@ img { /*rendo fluide le immagini */
 
     .container {
         width: 92%;
+        /*margin: 0 auto non è dichiarato perché lo eredita dal selettore .container nel blocco di css precedente */
     }
-}
 
+
+    .galleryImage {
+        width: 33.333%;
+        
+    }
+
+    .servizio {
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .servImage {
+        width: 30%;
+    }
+
+    .servizio:nth-of-type(even) .servText {
+        order:-1;
+        text-align: right;
+    }
+
+    .servText {
+        width: 70%;
+        padding:1rem;
+    }
+
+
+   
+   
+
+}  /* FINE MEDIA QUERY  */
 
 /* -------------------------------------------------------------------------- */
 /*                          REGOLE PER SCHERMI GRANDI                         */
@@ -48,6 +96,15 @@ img { /*rendo fluide le immagini */
 
     .container {
         width: 70%;
+    }
+
+    .galleryImage {
+        width: 25%;
+    }
+
+    .galleryImage.expandLarge {
+        /*SOLO gli elementi che hanno entrambe le classi*/
+        width: 50%
     }
 
 }
