@@ -1,41 +1,54 @@
 /* -------------------------------------------------------------------------- */
 /*                           STILI GENERALI E MOBILE                          */
 /* -------------------------------------------------------------------------- */
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     background: #efefef;
-    color:#333;
+    color: #333;
 }
 
-img { /*rendo fluide le immagini */
-    max-width:100%;
-    height:auto
+img {
+    /*rendo fluide le immagini */
+    max-width: 100%;
+    height: auto;
 }
 
 .logo img {
     width: 3rem;
 }
 
-        #mainHeader {
-            display: flex; /*da schermi medi affianco logo e menu*/
-            align-items: center;
-            justify-content: space-between;
-        }
+#mainHeader {
+    display: flex;
+    /*da schermi medi affianco logo e menu*/
+    align-items: center;
+    justify-content: space-between;
+}
 
+/* -------------------------------------------------------------------------- */
+/*                              STILI MENU MOBILE                             */
+/* -------------------------------------------------------------------------- */
+
+.menuIcon img{
+    width: 1.5rem;
+}
 
 .mainMenu ul {
     list-style-type: none;
     padding: 0;
-    
+    display: none; /*NASCONDE il menu da mobile */
+
 }
+
+
 
 .container {
     width: 96%;
-    margin:0 auto;
+    margin: 0 auto;
 }
-
 
 .servImage img {
     /*per allargare le immagini da mobile in modo da occupare tutto il viewport*/
@@ -51,14 +64,14 @@ img { /*rendo fluide le immagini */
 
 .galleryImage {
     width: 50%;
-    padding:0.5rem;
+    padding: 0.5rem;
 }
 
 /* --- FOOTER -- */
 
 #mainFooter {
     background-color: #2B3D7A;
-    color:#ccc;
+    color: #ccc;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -75,7 +88,6 @@ img { /*rendo fluide le immagini */
     margin-bottom: 1rem;
 }
 
-
 /* -------------------------------------------------------------------------- */
 /*                           REGOLE PER SCHERMI MEDI                          */
 /* -------------------------------------------------------------------------- */
@@ -86,12 +98,16 @@ img { /*rendo fluide le immagini */
         width: 6rem;
     }
 
+    /*STILI MENU SCHERMI MEDI */
 
+    .menuIcon {
+        display: none;
+    }
 
     .mainMenu ul {
         /*list-style-type: none | EREDITATO DA SOPRA */
-        display: flex;
-        column-gap:1rem;
+        display: flex; /*riappare perché display:flex sovrascrive display:none*/
+        column-gap: 1rem;
     }
 
     .container {
@@ -99,10 +115,9 @@ img { /*rendo fluide le immagini */
         /*margin: 0 auto non è dichiarato perché lo eredita dal selettore .container nel blocco di css precedente */
     }
 
-
     .galleryImage {
         width: 33.333%;
-        
+
     }
 
     .servizio {
@@ -116,25 +131,25 @@ img { /*rendo fluide le immagini */
     }
 
     .servizio:nth-of-type(even) .servText {
-        order:-1;
+        order: -1;
         text-align: right;
     }
 
     .servText {
         width: 70%;
-        padding:1rem;
+        padding: 1rem;
     }
 
-
     /*--- FOOTER SCHERMI MEDI ---*/
-
 
     .footerWrapper {
         display: flex;
         align-items: center;
     }
 
-    .social, .credits, .contatti {
+    .contatti,
+    .credits,
+    .social {
         width: 33%;
     }
 
@@ -143,13 +158,11 @@ img { /*rendo fluide le immagini */
     }
 
     .credits {
-        text-align: right
+        text-align: right;
     }
 
-   
-   
-
-}  /* FINE MEDIA QUERY  */
+}
+/* FINE MEDIA QUERY  */
 
 /* -------------------------------------------------------------------------- */
 /*                          REGOLE PER SCHERMI GRANDI                         */
@@ -167,7 +180,7 @@ img { /*rendo fluide le immagini */
 
     .galleryImage.expandLarge {
         /*SOLO gli elementi che hanno entrambe le classi*/
-        width: 50%
+        width: 50%;
     }
 
 }
