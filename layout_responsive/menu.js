@@ -11,5 +11,9 @@ document.getElementById('menuIcon').addEventListener("click",addMenuClass);
 
         menuIcon.classList.toggle('open');
         header.classList.toggle('is-mobile-open');
+        /*aggiungo la classe .noscroll al tag HTML
+        per evitare che la pagina scorra quando ho aperto il menu */
+        document.documentElement.classList.toggle('noscroll');
+
     
     }

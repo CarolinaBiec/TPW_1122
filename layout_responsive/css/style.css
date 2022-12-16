@@ -9,6 +9,13 @@ body {
     font-family: 'Roboto', sans-serif;
     background: #efefef;
     color: #333;
+    
+}
+
+/*SOLO per il menu mobile */
+html.noscroll {
+    overflow: hidden; 
+    /*nasconde il contenuto se va oltre la lunghezza del viewport.*/
 }
 
 img {
