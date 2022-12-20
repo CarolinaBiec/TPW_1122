@@ -35,6 +35,22 @@ img {
     justify-content: space-between;
 }
 
+
+.myIcons {
+    font-size: 6rem;
+}
+
+
+.myList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.myList i {
+    margin-right: 0.25rem;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                              STILI MENU MOBILE                             */
 /* -------------------------------------------------------------------------- */
@@ -49,6 +65,8 @@ img {
     display: none; /*NASCONDE il menu da mobile */
 
 }
+
+
 
 #hero img {
     width:100%;
@@ -135,6 +153,8 @@ img {
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width:768px) {
+
+
 
     .logo img {
         width: 6rem;
