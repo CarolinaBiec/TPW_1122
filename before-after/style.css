@@ -28,7 +28,7 @@ background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8281906512605
     /*EFFETTO DI COLORE */
     /*VEDI: 
     background:#ffcc00;
-    mix-blend-mode: color;
+    mix-blend-mode: color;*/
 }
 
 .heroImage:before {
