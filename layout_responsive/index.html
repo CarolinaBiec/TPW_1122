@@ -42,17 +42,35 @@
 
             <button id="menuIcon">
 
-                
+
 
                 <img src="./img/menuIcon.svg" alt="menu">
             </button>
 
         </header>
 
+        
+        <!-- <picture>
+            <source srcset={desktopImage}
+                    media="(min-width:992px)">
+            <img src={mobileImage} alt="">
+    
+         </picture> -->
         <main class="container">
 
             <div id="hero">
-                <img src="img/hero.jpg" alt="">
+
+                <picture>
+
+                    <source media="(min-width:992px)" srcset="img/hero_desktop.jpg">
+                   
+                    <source media="(min-width:640px)" srcset="img/hero_tablet.jpg">
+
+                    <img src="img/hero_mobile.jpg" alt="immagine stazione di Reggio Emilia">
+                    
+                </picture>
+
+                
             </div>
 
             <section id="intro">
