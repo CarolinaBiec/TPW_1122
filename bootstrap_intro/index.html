@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .btn-primary {
+            background:#ff9900;
+            border-color:#ff9900;
+
+        }
+
+        .btn-primary:hover {
+            background:#990000;
+            border-color:#880000;
+        }
+    </style>
+
+<div class="container">
+
+<h1>Griglia di Boostrap</h1>
+
+
+<div class="row"> <!-- Creo l'elemento row (riga) -->
+
+   <!--  Usando semplicemente la classe .col creo delle colonne di uguale grandezza -->
+    <div class="col">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore vero sapiente alias. Iste, neque aperiam, dolor cupiditate, totam doloribus inventore iure nostrum sunt nihil sint eius! Nemo, facere amet!
+    </div>
+
+    <div class="col">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore consequuntur velit provident accusamus nam nobis. Delectus, dolores nostrum dolorum ullam autem hic, voluptatem consectetur enim qui dolorem magnam quaerat iste atque esse possimus asperiores quasi explicabo aliquid itaque nulla. Nisi, necessitatibus.
+    </div>
+
+   
+</div>
+
+<hr>
+<!-- ESEMPIO DI COLONNE CON DIMENSIONI SPECIFICHE -->
+
+<h2>Colonne con dimensioni specifiche</h2>
+
+<div class="row">
+
+    <div class="col-6">Colonna da 6/12</div>
+    <div class="col-3">Colonna da 3/12</div>
+    <div class="col-3">Colonna da 3/12</div>
+
+</div>
+
+<hr>
+
+<h2>Colonne responsive</h2>
+
+<div class="row"> 
+    <!-- Combinando il codice del breakpoint alle classi col posso creare dei layout responsive -->
+    <div class="col-md-12 col-lg-6" style="background:red">Colonna intera fino a md e  6/12 da desktop</div>
+    <div class="col-md-6 col-lg-3">Colonna da 3/12 da desktop</div>
+    <div class="col-md-6 col-lg-3">Colonna da 3/12 desktop</div>
+
+</div>
+
+
+</div>
+
+<div class="container-lg" style="background:#ffcc00; margin-top:6rem">
+    Esempio di container 
+</div>
+
+<hr>
+
+<div class="container">
+    <h2>Bottoni</h2>
+
+<button type="button" class="btn btn-primary">Click me!</button>
+
+<a href="#" class="btn btn-primary">Button su link</a>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
