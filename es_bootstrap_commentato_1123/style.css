@@ -1,0 +1,9 @@
+img {
+    max-width:100%;
+    height: auto;
+}
+
+#offerte {
+    background: rgb(195,34,120);
+background: linear-gradient(0deg, rgba(195,34,120,1) 0%, rgba(104,183,222,1) 54%, rgba(253,187,45,1) 100%); 
+}
