@@ -227,8 +227,11 @@
         </section>
 
         <section id="form">
+
             <div class="container">
+
                 <form action="">
+                    
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="formElement">
@@ -245,9 +248,16 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="formElement">
+                            <div class="formElement h-100 d-flex flex-column">
+                              <!-- a formElement diamo  h-100 d-flex flex-column -->
                                 <label for="messaggio">Il tuo messaggio</label>
-                                <textarea name="messaggio" id="messaggio" class="form-control"></textarea>
+
+                             <!--    a textarea diamo flex-grow:1 -->
+                             <!-- flex-grow fa espandere l'elemento fino a occupare tutto lo spazio.
+                             In questo caso si espande in verticale perché abbiamo invertito la 
+                             direzione di flexbox usando flex-colum (= flex-direction:column) -->
+
+                               <textarea name="messaggio" id="messaggio" class="form-control flex-grow-1"></textarea>
                             </div>
                         </div>
                     </div>
