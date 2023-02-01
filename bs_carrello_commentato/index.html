@@ -234,7 +234,59 @@
                         </div>
 
                         <div class="col-lg-4">
-                            <h2>Riepilogo Ordine</h2>
+                         <!--  fs-1 imposta la dimensione del font alla stessa
+                          misura di H1 -->
+                            <div class="summaryHeader d-flex">
+                   <!--            NOTA: d-flex serve per fare comportare questo elemento esattamente come l'altro titolo che ha display:flex. 
+
+                              La proprietà display:flex di default fa allungare l'elemento (align-items:stretch) e impostandolo a entrambi otteniamo la stessa altezza. Così gli elementi <hr> che stanno sotto si allineano.  -->
+
+                              
+                              <h2 class="fs-1">Riepilogo Ordine</h2>
+
+                            </div>
+                            <hr>
+
+                            <div class="summary d-flex justify-content-between my-3">
+                              <div>
+                                OGGETTI:
+                                <span class="badge text-bg-primary">3</span>
+                              </div>
+
+
+                              <div>€133€</div>
+                            </div>
+
+                            <div class="sidebarForm">
+
+                              <label for="form-select" class="form-label">Scegli il metodo di spedizione</label>
+                              <select name="spedizione" id="spedizione" class="form-select">
+
+                                <option value="standard">Standard - €5.00</option>
+                                <option value="rapida">Rapida - €9.00</option>
+                                <option value="ecofriendly">Consegna a cavallo eco-friendly - €39.00</option>
+    
+                            </select>
+
+                            <div class="formElement my-3">
+                              <label for="sconto">Codice sconto</label>
+                              <input type="text" name="sconto" id="sconto" class="form-control" placeholder="Inserisci Codice">
+                            </div>
+
+
+                            <hr class="my-3">
+
+                            <div class="cartTotal d-flex justify-content-between">
+                              <div>TOTALE:</div>
+                              <div>€123</div>
+                            </div>
+
+                            <div class="buttonWrapper">
+                              <button class="btn btn-primary w-100">
+                               <i class="bi bi-check"></i> Acquista
+                              </button>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
