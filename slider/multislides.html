@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous">
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+        <title>Swiper Slider Multislide</title>
+    </head>
+    <body>
+        <div class="container">
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slide">
+
+                        <div class="card">
+                            <img
+                                src="https://source.unsplash.com/400x250/?mustang"
+                                class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h2>Card 1</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="card">
+                            <img
+                                src="https://source.unsplash.com/400x250/?dodge"
+                                class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h2>Card 2</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="card">
+                            <img
+                                src="https://source.unsplash.com/400x250/?miata"
+                                class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h2>Card 3</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="card">
+                            <img
+                                src="https://source.unsplash.com/400x250/?porsche"
+                                class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h2>Card 4</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="card">
+                            <img
+                                src="https://source.unsplash.com/400x250/?cadillac"
+                                class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h2>Card 5</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="card">
+                            <img
+                                src="https://source.unsplash.com/400x250/?bmw"
+                                class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h2>Card 6</h2>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <script>
+
+            //INIZIALIZZO SWIPER NELLA HERO
+
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal', //direzione di scorrimento
+                loop: true,
+                effect: 'slide',
+
+                //numero di slides per schermata
+
+                //definisco prima le slide da mobile
+                slidesPerView: 1, //1 per volta da mobile
+                spaceBetween: 0,
+
+                breakpoints: {
+                    640: { //dimensioni viewport in pixel
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    768: { //da 768 px in su mostra 3 slide
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    992: {
+                        slidesPerView: 4,
+                        spaceBetween: 30
+                    }
+                },
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination'
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+
+                // And if we need scrollbar   scrollbar: {     el: '.swiper-scrollbar',   },
+            });
+        </script>
+
+    </body>
+</html>
