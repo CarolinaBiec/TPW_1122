@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'menu';
+
+body {
+    background:$white;
+    color:$black;
+    font-family: $font-family-sans;
+}
+
+h1,h2,h3 {
+    font-family: $font-family-serif;
+    margin-top: $spacer*3; 
+}
+
+h1 {
+    font-weight: bold;
+    color:$blue;  
+    font-size: 4rem; 
+}
+
+.bigText {
+   @extend h1; /*@extend applica le caratteristiche di un selettore a un altro gruppo di regole */
+}
+
+
+
+
+
+
+
