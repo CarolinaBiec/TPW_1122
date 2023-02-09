@@ -39,6 +39,9 @@ h1 {
 
 .button {
     @include myButton($blue,$white);
+}
 
+.button-alt {
+    @include myButton($blue,$blue,true); //bottone con OUTLINE settato a TRUE.
 }
 
