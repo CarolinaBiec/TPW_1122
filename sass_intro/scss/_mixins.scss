@@ -2,6 +2,19 @@
 /*                          QUA METTO TUTTI I MIXINS                          */
 /* -------------------------------------------------------------------------- */
 
+@mixin myButton($bgColor,$textColor) {
+    background: $bgColor;
+    padding:0.5rem 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    color:$textColor;
+    border:1px solid $textColor;
+
+    &:hover {
+        background: darken($bgColor,5%);
+    }
+}
 
 
 @mixin myGradient($from, $to, $direction:180deg) {

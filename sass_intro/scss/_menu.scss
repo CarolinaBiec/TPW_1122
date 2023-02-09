@@ -1,9 +1,14 @@
 
+
 #mainMenu {
+
+    padding:2rem 0;
+
     ul {
         margin: 0;
         padding: 0;
         list-style-type: none;
+       
 
         display: flex;
 
@@ -14,12 +19,25 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 color:$blue;
-            }
 
-            a:hover {
+                &:hover {        //si applica al selettore genitore quando ci passo col puntatore
                 color:$white;
                 background:invert($blue,100%);
+                }
+
+                &.inactive {     //si applica ai casi in cui il selettore genitore ha la classe .inactive
+                    background:$black;
+                    color:$white;
+                }
+
+                &.loginButton {
+                    @include myButton($altColor,$black)
+                }
+
             }
+
+
+         
         }
     }
 }

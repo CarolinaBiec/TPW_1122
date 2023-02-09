@@ -1,10 +1,14 @@
+@import 'normalize';
 @import 'variables';
+@import 'mixins';
 @import 'menu';
 
 body {
     background:$white;
     color:$black;
-    font-family: $font-family-sans;
+    font-family: $font-family-sans;  
+
+   
 }
 
 h1,h2,h3 {
@@ -20,11 +24,21 @@ h1 {
 
 .bigText {
    @extend h1; /*@extend applica le caratteristiche di un selettore a un altro gruppo di regole */
+   text-shadow:1px 1px 1px darken($blue,15%); 
 }
 
 
+#mainFooter {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
 
+    @include myGradient(#ffcc00,#900000); //il mixin supporta 3 parametri, ma posso passarne 2 perché
+    //il terzo parametro ha un valore di default impostato sul mixin.
+}
 
+.button {
+    @include myButton($blue,$white);
 
-
+}
 
